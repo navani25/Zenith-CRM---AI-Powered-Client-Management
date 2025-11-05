@@ -3,7 +3,6 @@
 
 <div align="center">
 
-![Zenith CRM Banner](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
 
 **A modern, AI-enhanced CRM solution designed for small teams and freelancers**
 
