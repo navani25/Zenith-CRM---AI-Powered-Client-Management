@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenith CRM - AI-Powered Client Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              border: 'hsl(220, 14%, 93%)',
+              background: 'hsl(220, 16%, 96%)',
+              foreground: 'hsl(220, 13%, 18%)',
+              primary: {
+                DEFAULT: '#22C55E', // green-500
+                foreground: '#FFFFFF',
+              },
+              secondary: {
+                DEFAULT: '#F0FDF4', // green-50
+                foreground: '#14532D', // green-900
+              },
+              muted: {
+                DEFAULT: 'hsl(220, 14%, 93%)',
+                foreground: 'hsl(220, 9%, 46%)',
+              },
+              accent: {
+                 DEFAULT: '#DCFCE7', // green-100
+                 foreground: '#166534', // green-800
+              },
+              card: '#FFFFFF',
+
+              dark: {
+                border: 'hsl(220, 13%, 28%)',
+                background: 'hsl(220, 13%, 18%)',
+                foreground: 'hsl(220, 14%, 93%)',
+                primary: {
+                  DEFAULT: '#22C55E',
+                  foreground: '#FFFFFF',
+                },
+                secondary: {
+                  DEFAULT: 'hsl(220, 13%, 23%)',
+                  foreground: 'hsl(220, 14%, 93%)',
+                },
+                muted: {
+                  DEFAULT: 'hsl(220, 13%, 23%)',
+                  foreground: 'hsl(220, 9%, 66%)',
+                },
+                accent: {
+                   DEFAULT: 'hsl(142, 71%, 15%)',
+                   foreground: '#FFFFFF',
+                },
+                card: 'hsl(220, 13%, 22%)',
+              }
+            },
+            borderRadius: {
+              xl: `1.25rem`,
+              lg: `0.75rem`,
+              md: `0.5rem`,
+              sm: `0.25rem`,
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.0"
+  }
+}
+</script>
+<style>
+  html, body, #root {
+    height: 100%;
+    overflow: hidden;
+  }
+  /* Custom scrollbar for a cleaner look */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(220, 14%, 83%);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(220, 9%, 66%);
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    background: hsl(220, 13%, 40%);
+  }
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: hsl(220, 13%, 50%);
+  }
+
+  /* Hide scrollbar on mobile */
+  @media (max-width: 768px) {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  /* Class to hide scrollbar but keep it scrollable */
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .custom-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-foreground dark:bg-dark-background dark:text-dark-foreground">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </body>
+</html>
